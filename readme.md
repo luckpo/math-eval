@@ -1,5 +1,14 @@
 ## Simple API with Express
 
+This application evaluates mathematical expressions, using [math.js](http://mathjs.org/).
+
+It accepts POST calls on the /evaluate endpoints. Here is the format of the payload :
+
+`{
+    "expression": "<valid mathematical expression>"
+}`
+
+
 #### Dependencies
 * axios: ^0.17.1
 * express: ^4.16.2
