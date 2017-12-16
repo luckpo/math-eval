@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.16.2",
+    "mathjs": "^3.17.0",
+    "q": "^1.5.1"
+  },
+  "scripts": {
+    "start": "node api.js",
+    "test-local": "mocha tests/evaluateLocal.test.js",
+    "test-remote": "mocha tests/evaluateRemote.test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
