@@ -3,6 +3,7 @@
 //My libs
 const express = require('express');
 const bodyParser = require('body-parser');
+const serverless = require('serverless-http');
 
 //My routes. On a larger project, this must be in a separate file
 
@@ -24,7 +25,4 @@ api.use('*', function (req, res, next) {
         res.send(`Usage : Call API (POST) at endpoint "/evaluate" \nwith json object {expression: <expression string>}`);
 });
 
-
-api.listen(3000, function() {
-    console.log('API started')
-})
+module.exports.handler = serverless(api);

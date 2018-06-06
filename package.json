@@ -3,7 +3,8 @@
     "axios": "^0.17.1",
     "express": "^4.16.2",
     "mathjs": "^3.17.0",
-    "q": "^1.5.1"
+    "q": "^1.5.1",
+    "serverless-http": "^1.5.5"
   },
   "scripts": {
     "start": "node api.js",
